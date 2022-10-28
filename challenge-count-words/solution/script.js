@@ -16,7 +16,7 @@ function calculateWords(chapterOfABook) {
   return wordCount;
 }
 
-calculateWords(getDraculaChapterOne());
+calculateWords(getSmallString());
 
 /**                            */
 /**                            */
@@ -80,7 +80,7 @@ function shallowEqual(object1, object2) {
 }
 
 function getSmallString() {
-  return "I love CodeYourFuture";
+  return "I love' CodeYour@! $%Future";
 }
 
 function getDraculaChapterOne() {

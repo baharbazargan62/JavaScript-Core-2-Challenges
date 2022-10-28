@@ -1,12 +1,16 @@
 function calculateWords(chapterOfABook) {
-  const wordCount = {};
-
+  let wordCounts = {};
+  let words=getDraculaChapterOne().replace(/[.,\/#?!$%\^&\*;:{}=\-_`~()]/g,"").toLocaleLowerCase().split(" ")
+  if (chapterOfABook===""){return Boolean}
+  words.forEach(word => {
+    wordCounts[word] = (wordCounts[word] || 0) + 1;
+  });
   // Write your code in here
-
-  return wordCount;
+console.log(wordCounts)
+  return wordCounts;
 }
 
-calculateWords(getDraculaChapterOne());
+calculateWords();
 
 /**                            */
 /**                            */
@@ -70,7 +74,7 @@ function shallowEqual(object1, object2) {
 }
 
 function getSmallString() {
-  return "I love CodeYourFuture";
+  return "I love?%$ CodeYourFuture";
 }
 
 function getDraculaChapterOne() {
